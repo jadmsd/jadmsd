@@ -1,3 +1,69 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3fead02d45c9c562e97ba97999184a1087536b9d26a7c6434f2f5546671cdaf9
-size 1716
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {font-family: arial, sans-serif;
+    }
+    .login-form {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid  #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .login-form  input{
+        width: 280px;
+        padding: 10px;
+        height: 40px;
+        margin-bottom: 20px;
+        border: 1px solid  #ccc;
+    }
+.login-form button[type="submit"]{
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ .login-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+ }
+ .login-form .custom-button {
+            width: 121px;
+            height: 30px;
+            background-color: white;
+            color:  black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form .custom-button:hover{
+            color: blue;
+
+        }
+.login-form .custom-button-2:hover{
+color: blue;
+cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+    
+    <div class="login-form">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <button class="custom-button" onclick="location.href='forgot pass.html'">Forgot Password</button>
+            <p>Dont have an account?<button class="custom-button-2" onclick="location.href='sign up.html'">Create one</button></p>
+        </form>
+    </div>
+</body>
+</html>
