@@ -1,3 +1,82 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c3c0b16705fa986ee961e0a9a286bd008991880a9a84dec693e4f9b5b6a9179
-size 2601
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: small;
+            background-image: url('private jet.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            margin: 0; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .login-form {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid  #000000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-form input {
+            width: 280px;
+            padding: 10px;
+            height: 40px;
+            margin-bottom: 20px;
+            border: 1px solid  #000000;
+            background-color: rgba(0, 0, 0, 0.719);
+            color: white;
+        }
+        .login-form button[type="submit"]{
+            width: 100%;
+            height: 40px;
+            background-color: #000000b4;
+            color: #000000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form button[type="submit"]:hover{
+            color: white;
+        }
+        .login-form .custom-button-2 {
+            width: 200px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.719);
+            color:  black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .login-form .custom-button-2:hover{
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password"  required>
+            <input type="password" placeholder="Confirm Password"  required>
+            <button type="submit">Sign Up</button>
+            <button class="custom-button-2" onclick="location.href='login.html'">Go back</button>
+        </form>
+    </div>
+</body>
+</html>
