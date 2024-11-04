@@ -1,3 +1,73 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:598d73109cc68878880144d5095ac84240ede21ba8ddfd2b8bbd21f37650bbb8
-size 2149
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {font-family: Arial, sans-serif;
+            font-size: small;
+            background-image: url('private jet.jpg'); /* Replace with your image path */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-position: center; /* Center the image */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            display: flex; /* Use flexbox for centering content */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+}
+.login-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid  #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.login-form  input{
+    width: 280px;
+    padding: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid  #000000;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+}
+.login-form button[type="submit"]{
+width: 100%;
+height: 40px;
+background-color: rgba(0, 0, 0, 0.774);
+color: #000000;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;}
+.login-form button[type="submit"]:hover{
+    color: white;
+}
+.login-form .custom-button {
+            width: 70px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.774);
+            color:  rgb(0, 0, 0);
+            padding: 10px;
+            border: 5px;
+            border-radius: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .login-form .custom-button:hover{
+            color: white;
+        }
+</style>
+</head>
+<body>
+   <div class="login-form">
+    <form>
+    <h2>Write your email and we will send you a verification code.</h2>
+    <input type="email" placeholder="Email" required>
+    <button type="submit" onclick="location.href='forgot pass 2.html'"> Send</button>
+    <button class="custom-button" onclick="location.href='login.html'">Go back</button>
+</form>
+
+   </div> 
+</body>
+</html>
