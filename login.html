@@ -1,3 +1,94 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73227ac757ecccd77459fd2b7e55b5f9ac7476eb5b662dc37a39c11c8cc3ce5f
-size 2890
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {  font-family: Arial, sans-serif;
+            font-size: small;
+            background-image: url('private jet.jpg'); /* Replace with your image path */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-position: center; /* Center the image */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            display: flex; /* Use flexbox for centering content */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+    }
+    .login-form {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid  #000000;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .login-form  input{
+        width: 280px;
+        padding: 10px;
+        height: 40px;
+        margin-bottom: 20px;
+        border: 1px solid  #000000;
+        background-color: #000000b2;
+        color: white;
+    }
+.login-form button[type="submit"]{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ .login-form button[type="submit"]:hover {
+    color: white;
+ }
+ .login-form .custom-button {
+            width: 121px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.719);
+            color:  rgb(0, 0, 0);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .login-form .custom-button:hover{
+            color: white;
+
+        }
+        .login-form .custom-button-2{
+            width: 121px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.719);
+            color:  rgb(0, 0, 0);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+}
+        .login-form .custom-button-2:hover{
+            cursor: pointer;
+            color: white;
+}
+
+</style>
+</head>
+<body>
+    
+    <div class="login-form">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <button class="custom-button" onclick="location.href='forgot pass.html'">Forgot Password</button>
+            <p>Dont have an account?<button class="custom-button-2" onclick="location.href='sign up.html'">Create one</button></p>
+        </form>
+    </div>
+</body>
+</html>
